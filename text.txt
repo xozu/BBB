@@ -1,0 +1,19 @@
+You now have a full copy of the "test" repository.
+Your repository is just as complete as the version on the GitHub server and if you were to deploy it over a network, file system, other Git server, or even on a different 
+GitHub account, it could assume the role as the main version of this repository.
+while there is no eneed for a central server, it is usually the case, as it enables multiple users to
+check in source to a known master repository.
+the repository is created in the test directory and it currently contains the following:
+
+you can see the README.md file that was created and you can also see a hidden subdirectory .git,
+which contains the following files and directories:
+
+the hidden .git folder is in the project's root directory and it contains all of the information about the repository,
+such as commit messages, logs, and the data objects.
+
+getting the status (git status)
+
+now that the repository exits, 
+the next step is to add a new text file to the working directory,
+where it will be in an untracked state.
+when you call the command git status, you can see a message stating that "untracked files" are present:
