@@ -17,3 +17,16 @@ now that the repository exits,
 the next step is to add a new text file to the working directory,
 where it will be in an untracked state.
 when you call the command git status, you can see a message stating that "untracked files" are present:
+
+the next step is to add these untracked file sto the staging area.
+however, if you did not want to add a set of files, you could also create a .gitignore file to ignore those files.
+for example, this could be useful if you are building C/C++ projects and you decide that you do not want to add intermediate .o files.
+here is an example of creatign a .gitignore file in order to ignore C/C++ .o files:
+
+in this case, two files are untracked, but there is no mention of the testobj.o file, as it is being correctly ignored.
+
+Adding to the Staging Area (git add)
+
+the files in the working directory can now be added to the staging area by typeing git add *, 
+which will add all the files in the workign directory.
+however for clarity, each file is being added explicitly here:
