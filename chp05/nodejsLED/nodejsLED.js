@@ -7,6 +7,7 @@ function writeLED(filename, value, path){
 	try{
 		// the next call must be synchronous, otherwise the timer will not work
 		fs.writeFileSync(path + filename, value);
+		// fs.writeFile(path + filename, value);
 	}
 	catch(err){
 		console.log("The write failed to the file: " + path+filename);
